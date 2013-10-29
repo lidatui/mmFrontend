@@ -1,0 +1,30 @@
+{
+  "name": "mmFrontend",
+  "title": "mmFrontend",
+  "description": "基于AngularJS的前端模块",
+  "version": "0.1.0",
+  "homepage": "https://github.com/miemiedev/mmFrontend",
+  "author": {
+    "name": "miemiedev",
+    "email": "dev@miemie.li"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/miemiedev/mmFrontend.git"
+  },
+  "bugs": "https://github.com/miemiedev/mmFrontend/issues",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/miemiedev/mmFrontend/blob/master/LICENSE-MIT"
+    }
+  ],
+
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.6.0",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-uglify": "~0.2.0",
+    "grunt-contrib-clean": "~0.4.0",
+    "grunt": "~0.4.1"
+  }
+}

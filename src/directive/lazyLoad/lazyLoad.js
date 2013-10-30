@@ -13,13 +13,13 @@ angular.module('mm.lazyLoad', [])
     };
 
     var getWindowSize = function () {
-      var wWidth, wHeight;
+      var wWidth=9999, wHeight=9999;
       if (typeof( $window.innerWidth ) === 'number') {
         wWidth = $window.innerWidth;
         wHeight = $window.innerHeight;
-      } else if ($document.documentElement && ( $document.documentElement.clientWidth || $document.documentElement.clientHeight )) {
-        wWidth = $document.documentElement.clientWidth;
-        wHeight = $document.documentElement.clientHeight;
+      } else if ($document[0].documentElement && ( $document[0].documentElement.clientWidth || $document[0].documentElement.clientHeight )) {
+        wWidth = $document[0].documentElement.clientWidth;
+        wHeight = $document[0].documentElement.clientHeight;
       }
       return {
         width: wWidth,

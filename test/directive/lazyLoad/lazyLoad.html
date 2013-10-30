@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html id="ng-app" ng-app="app" xmlns:ng="http://angularjs.org">
+<head>
+    <title></title>
+    <!--[if lt IE 9]>
+    <script src="../../../lib/html5shiv.js"></script>
+    <![endif]-->
+    <!--[if lte IE 8]>
+    <script src="../../../lib/json3.min.js"></script>
+    <![endif]-->
+    <style>
+        .block{
+            margin-top: 1000px;height: 200px;
+        }
+        .fillColor{
+            background: lightskyblue;
+        }
+    </style>
+</head>
+<body>
+
+<div class="block" mm-lazy-load="fillColor" ></div>
+
+<script src="../../../lib/angular-1.2.0-rc.3/angular.min.js"></script>
+<script src="../../../src/directive/lazyLoad/lazyLoad.js"></script>
+<script>
+    angular.module('app',['mm.lazyLoad']);
+</script>
+</body>
+</html>

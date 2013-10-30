@@ -1,10 +1,10 @@
-/*! mmFrontend - v0.1.0 - 2013-10-29
- * https://github.com/miemiedev/mmFrontend
- * Copyright (c) 2013 miemiedev; Licensed MIT */
+/*! mmFrontend - v0.1.0 - 2013-10-30
+* https://github.com/miemiedev/mmFrontend
+* Copyright (c) 2013 miemiedev; Licensed MIT */
 'use strict';
 
 angular.module('mm.lazyLoad', [])
-  .directive('mmLazyLoad', ['$document', '$window'], function ($document, $window) {
+  .directive('mmLazyLoad', ['$document', '$window', function ($document, $window) {
     var addEvent = function (evnt, elem, func) {
       if (elem.addEventListener) {
         elem.addEventListener(evnt, func, false);
@@ -52,4 +52,4 @@ angular.module('mm.lazyLoad', [])
     return {
       link: link
     };
-  });
+  }]);

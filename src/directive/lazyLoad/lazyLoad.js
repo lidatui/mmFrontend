@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('mm.lazyLoad', [])
-  .directive('mmLazyLoad', ['$document', '$window'], function ($document, $window) {
+  .directive('mmLazyLoad', ['$document', '$window', function ($document, $window) {
     var addEvent = function (evnt, elem, func) {
       if (elem.addEventListener) {
         elem.addEventListener(evnt, func, false);
@@ -49,4 +49,4 @@ angular.module('mm.lazyLoad', [])
     return {
       link: link
     };
-  });
+  }]);

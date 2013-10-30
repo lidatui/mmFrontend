@@ -23,7 +23,7 @@ module.exports = function (grunt) {
       things: {
         src: ['**/*.js'],
         cwd: 'src/',
-        dest: 'dest/',
+        dest: 'dist/',
         expand: true
       }
     },
@@ -33,8 +33,8 @@ module.exports = function (grunt) {
       },
       things: {
         src: ['**/*.js'],
-        cwd: 'dest/',
-        dest: 'dest/',
+        cwd: 'dist/',
+        dest: 'dist/',
         expand: true,
         ext: '.min.js'
       }
